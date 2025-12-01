@@ -3,7 +3,7 @@
 A clean & modern Flutter demo app showcasing authentication, secure storage, state management with **Provider**, and a smooth login → home → profile flow.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter" />
+  <img src="https://img.shields.io/badge/Flutter-3.35.6-blue?logo=flutter" />
   <img src="https://img.shields.io/badge/Provider-State%20Management-7f52ff" />
   <img src="https://img.shields.io/badge/License-MIT-green" />
   <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-orange" />
