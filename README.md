@@ -1,153 +1,58 @@
-📦 FakeShop Provider
+<p align="center">
+  <img src="assets/banner.png" alt="FakeShop Provider Banner" width="70%" />
+</p>
 
-A modern Flutter e-commerce demo app built with provider for state management, GoRouter navigation, and clean architectural practices.
-Features include authentication, product listing, categories, cart, and user profile — using a fake shop API.
+# 🛍️ FakeShop Provider
 
-🚀 Features
-👤 Authentication
+A clean & modern Flutter demo app showcasing authentication, secure storage, state management with **Provider**, and a smooth login → home → profile flow.
 
-Email & password login
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter" />
+  <img src="https://img.shields.io/badge/Provider-State%20Management-7f52ff" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-orange" />
+</p>
 
-Secure token storage (flutter_secure_storage)
+---
 
-Auto-login on app restart
+## 🧭 Overview
 
-🏠 Home
+FakeShop Provider is a lightweight Flutter project demonstrating:
 
-Product highlights
+- 🔐 Login with API + JWT token
+- 🔒 Secure token handling via `flutter_secure_storage`
+- 🧩 Global state using **Provider**
+- 🧭 Navigation logic using **GoRouter**
+- 🧑‍💼 Profile persistence across the app
+- 🎨 Simple & clean UI
 
-Category browsing
+Perfect for beginners learning Flutter state management, or for devs bootstrapping an app with auth.
 
-Personalized welcome header
+---
 
-🛍 Products
+## 📸 Screenshots
 
-All Products screen
+| Login Screen | Home Screen | Profile Screen |
+|-------------|-------------|----------------|
+| <img src="assets/screens/login.png" width="260"/> | <img src="assets/screens/home.png" width="260"/> | <img src="assets/screens/profile.png" width="260"/> |
 
-Product card UI
+> Add your screenshots to `assets/screens/` and they will render above.
 
-Add to Cart
+---
 
-🛒 Cart
+## 📂 Folder Structure
 
-Cart state managed using Provider
-
-Update quantities
-
-Remove items
-
-🎭 Profile
-
-Dating-app–style minimalist profile design
-
-Avatar, name, email, role
-
-Logout functionality
-
-🎨 UI/UX
-
-Modern, clean layout
-
-Floating bottom navigation bar
-
-Smooth transitions using GoRouter
-
-🧱 Tech Stack
-Technology	Purpose
-Flutter	Core framework
-Provider	State management
-GoRouter	Navigation and routing
-Flutter Secure Storage	Persisting tokens securely
-HTTP package	API calls
-Fake Shop API	Data source
-📱 Screenshots
-
-Add your screenshots here
-
-/assets/screenshots/home.png  
-/assets/screenshots/profile.png  
-/assets/screenshots/products.png
-
-📂 Project Structure
 lib/
-├── models/
-├── providers/
-├── services/
-├── screens/
-├── utils/
-└── main.dart
-
-🔌 API Endpoints
-
-FakeShop API (example):
-
-POST /auth/login
-
-GET /auth/profile
-
-GET /products
-
-GET /products/categories
-
-🔧 Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/<your-username>/fakeshop_provider.git
-cd fakeshop_provider
-
-2️⃣ Install dependencies
-flutter pub get
-
-3️⃣ Run the app
-flutter run
-
-🔐 Environment Setup
-
-Create a .env (optional if needed):
-
-API_BASE_URL=https://fakestore.com/api
-
-🏗 Architecture
-
-This project follows a lightweight architecture:
-
-Providers for app-wide reactive data
-
-Services handle API logic
-
-Models map JSON responses
-
-GoRouter manages all navigation logic
-
-Clean, scalable, easy to expand.
-
-🧪 Roadmap
-
-Theme switch (dark/light mode)
-
-Add real payment gateway
-
-Wishlist feature
-
-Search with filters
-
-Animations for products
-
-🤝 Contributing
-
-Contributions are welcome!
-
-Fork repo
-
-Create a branch
-
-Commit changes
-
-Open Pull Request
-
-📄 License
-
-This project is open-source under the MIT License.
-
-⭐ Show Your Support
-
-If you like this project, please star⭐⭐⭐ the repo — it means a lot ❤️
+│
+├─ providers/
+│ └─ auth_provider.dart
+│
+├─ services/
+│ └─ api_services.dart
+│
+├─ screens/
+│ ├─ login_screen.dart
+│ ├─ home_screen.dart
+│ └─ profile_screen.dart
+│
+└─ main.dart
