@@ -32,23 +32,3 @@ Perfect for beginners learning Flutter state management, or for devs bootstrappi
 |-------------|-------------|----------------|
 | <img src="assets/screens/login.png" width="260"/> | <img src="assets/screens/home.png" width="260"/> | <img src="assets/screens/profile.png" width="260"/> |
 
-> Add your screenshots to `assets/screens/` and they will render above.
-
----
-
-## 📂 Folder Structure
-
-lib/
-│
-├─ providers/
-│ └─ auth_provider.dart
-│
-├─ services/
-│ └─ api_services.dart
-│
-├─ screens/
-│ ├─ login_screen.dart
-│ ├─ home_screen.dart
-│ └─ profile_screen.dart
-│
-└─ main.dart
