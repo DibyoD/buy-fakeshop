@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" alt="FakeShop Provider Banner" width="70%" />
-</p>
-
 # 🛍️ FakeShop Provider
 
 A clean & modern Flutter demo app showcasing authentication, secure storage, state management with **Provider**, and a smooth login → home → profile flow.
