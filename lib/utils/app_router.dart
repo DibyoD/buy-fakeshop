@@ -2,6 +2,7 @@ import 'package:fakeshop_provider/screens/all_products.dart';
 import 'package:fakeshop_provider/screens/cart_screen.dart';
 import 'package:fakeshop_provider/screens/home_screen.dart';
 import 'package:fakeshop_provider/screens/login.dart';
+import 'package:fakeshop_provider/screens/product_details.dart';
 import 'package:fakeshop_provider/screens/profile_screen.dart';
 import 'package:fakeshop_provider/screens/splash_screen.dart';
 import 'package:fakeshop_provider/utils/app_nav_bar.dart';
@@ -42,6 +43,13 @@ class AppRouter {
       GoRoute(path: '/splash', builder: (_, __) => const SplashScreen()),
       GoRoute(path: '/login', builder: (_, __) => LoginScreen()),
       GoRoute(path: '/allProducts', builder: (_, __) => const AllProducts()),
+      GoRoute(
+        path: '/productDetails/:id',
+        builder: (_, state) {
+          final id = state.pathParameters['id']!;
+          return ProductDetails(id: int.parse(id));
+        },
+      ),
 
       /// ----- Navbar Wrapper -----
       ShellRoute(
@@ -55,4 +63,3 @@ class AppRouter {
     ],
   );
 }
-

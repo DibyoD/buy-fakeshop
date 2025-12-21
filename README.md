@@ -1,6 +1,7 @@
 # 🛍️ FakeShop Provider
 
-A clean & modern Flutter demo app showcasing authentication, secure storage, state management with **Provider**.
+A clean & modern Flutter demo app showcasing authentication, secure storage, state management with *
+*Provider**.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Flutter-3.35.6-blue?logo=flutter" />
@@ -28,7 +29,7 @@ Perfect for beginners learning Flutter state management, or for devs bootstrappi
 
 ## 📸 Screenshots
 
-| Login Screen | Home Screen | Profile Screen |
-|-------------|-------------|----------------|
+| Login Screen                                      | Home Screen                                      | Profile Screen                                      |
+|---------------------------------------------------|--------------------------------------------------|-----------------------------------------------------|
 | <img src="assets/screens/login.png" width="260"/> | <img src="assets/screens/home.png" width="260"/> | <img src="assets/screens/profile.png" width="260"/> |
 

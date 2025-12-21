@@ -61,4 +61,13 @@ class ApiServices {
       throw Exception("Categories failed: ${response.body}");
     }
   }
+
+  static Future<Products> productDetails({required int id}) async {
+    final response = await http.get(Uri.parse(ApiEndpoints.productDetails(id)));
+    if (response.statusCode == 200) {
+      return Products.fromJson(jsonDecode(response.body));
+    } else {
+      throw Exception("Product details failed: ${response.body}");
+    }
+  }
 }

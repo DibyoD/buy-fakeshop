@@ -166,7 +166,10 @@ class _AllProductsState extends State<AllProducts> {
                                             MainAxisAlignment.end,
                                         children: [
                                           TextButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              final productId = item.id;
+                                              context.push("/productDetails/$productId");
+                                            },
                                             child: const Text(
                                               "View",
                                               style: TextStyle(

@@ -10,11 +10,9 @@ class AuthProvider extends ChangeNotifier {
   bool isLoggedIn = false;
   bool _initialized = false; // <-- NEW
 
-
   AuthProvider() {
     loadUserFromStorage();
   }
-
 
   Future<void> loadUserFromStorage() async {
     if (_initialized) return;
@@ -25,7 +23,6 @@ class AuthProvider extends ChangeNotifier {
 
     if (token != null) {
       try {
-        print("Here");
         final userResponse = await ApiServices.userProfile();
         setUser(userResponse);
       } catch (err) {

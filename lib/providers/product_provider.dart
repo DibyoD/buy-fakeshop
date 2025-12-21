@@ -7,6 +7,7 @@ class ProductProvider extends ChangeNotifier {
   bool isLoading = false;
   List<Products> products = [];
   List<Categories> categories = [];
+  Products? product;
 
   getAllProducts() async {
     isLoading = true;
@@ -25,6 +26,19 @@ class ProductProvider extends ChangeNotifier {
     notifyListeners();
     try {
       categories = await ApiServices.allCategories();
+    } catch (error) {
+      print("Error: ${error.toString()}");
+    }
+    isLoading = false;
+    notifyListeners();
+  }
+
+  getProductDetails({required int id}) async {
+    isLoading = true;
+    notifyListeners();
+
+    try {
+      product = await ApiServices.productDetails(id: id);
     } catch (error) {
       print("Error: ${error.toString()}");
     }
